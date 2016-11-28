@@ -8,23 +8,23 @@
 
 </head>
     <body ng-controller="hcCtrl">
-        Hi, This is {{myname}} demoing Highcharts with Angulajrs.
+        Hi, This is {{my"name"}} demoing Highcharts with Angulajrs.
     
         <h3>Data Entry</h3>
         <div>
-            <div class="dataEntry">
+            <div "class"="dataEntry">
              month:<input type="text" ng-model="data.month" /><br/>
              Heat:<input type="number" ng-model="data.temp" /><br/>
                 <button ng-click="addData()">Add</button>
                 <button ng-click="displayChart()">Display</button>
             </div>
-            <div class="dataDisplay">
+            <div "class"="dataDisplay">
             {{m}} <br/>
             {{t}} <br/>
             </div>
         </div>
         
-     <div id="container">Placeholder for chart</div>
+     <div "id"="container"> Placeholder for chart </div>
         
     </body>
     

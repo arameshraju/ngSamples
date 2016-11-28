@@ -1,0 +1,47 @@
+<html ng-app="myApp">
+<head>
+<title>Angular Firebase</title>   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+    <script src="firebase.js"></script>'
+     <link rel="stylesheet" href="firebase.css">
+
+</head>
+    <body ng-controller="myCtrl">
+            <h2>Firebase Example</h2>
+        
+
+        <div class="object">
+            Your Favorite Colour <input type="text" ng-model="o.color" /> <br>
+            Your Favorite Flower <input type="text" ng-model="o.flower" /> <br>
+            
+            <button ng-click="createNewObject()">Create</button>
+
+        </div>
+        <div class="arrayData">
+            {{list |json}}
+        </div>
+        <div class="meetings">
+            <table >
+                <tr>
+                    <td>Meeting</td>
+                    <td>Local</td>
+                    <td></td>
+                </tr>
+                <tr ng-repeat="m in meeting">
+                    <td>{{m.meeting}}</td>
+                    <td>{{m.location}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="text"  ng-model="m.meeting"/> </td>
+                    <td><input type="text" ng-model="m.location"/> </td>
+                    <td> <button ng-click="addMeeting()">Add </button> </td>
+                </tr>
+            </table>
+        </div>
+    
+    </body>
+    
+</html>

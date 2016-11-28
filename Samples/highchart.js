@@ -4,7 +4,7 @@ app.controller('hcCtrl',hcCtrl);
 hcCtrl.$inject=['$scope'];
 function hcCtrl($scope){
     console.log('calling hcCtrl');
-    $scope.myname="Ramesh";
+    $scope.my"name"="Ramesh";
     $scope.m=[];
     $scope.t=[];
     $scope.addData=function(){

@@ -1,0 +1,43 @@
+<html ng-app="myApp">
+<head>
+<title>Angular Cookies</title>   
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.dataTables.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.js"></script>
+  
+    
+ 
+    <script src="lib/angular-datatables.js"></script>
+
+
+    <script src="ngdatatables.js"></script>'
+
+     <link rel="stylesheet" href="lib/angular-datatables.min.css">
+     <link rel="stylesheet" href="ngdatatables.css">
+</head>
+    <body ng-controller="myCtrl">
+            <h2>Angular Datatable</h2>
+        <table datatable="ng" class="row-border hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>class</th>
+            <th>area</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="person in persons">
+            <td>{{ person.id }}</td>
+            <td>{{ person.name }}</td>
+            <td>{{ person.class}}</td>
+            <td>{{ person.area}}</td>
+        </tr>
+        </tbody>
+    </table>
+            
+
+    </body>
+    
+</html>
